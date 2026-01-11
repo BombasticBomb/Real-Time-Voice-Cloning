@@ -203,6 +203,7 @@ if __name__ == '__main__':
             sf.write(filename, generated_wav.astype(np.float32), synthesizer.sample_rate)
             num_generated += 1
             print("\nSaved output as %s\n\n" % filename)
+            break
 
 
         except Exception as e:
